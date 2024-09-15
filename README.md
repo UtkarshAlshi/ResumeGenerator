@@ -1,72 +1,70 @@
+# Getting Started with Create React App
 
-# Resume Generator
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-**Resume Generator** is a web application that allows users to upload PDF files, extract their text content, and use AI (GPT-4) to generate insights or summaries. The application is built using Node.js, Express, and Multer, and provides a user-friendly interface for handling file uploads and processing.
+## Available Scripts
 
-## Features
+In the project directory, you can run:
 
-- **PDF Upload**: Users can upload PDF files directly through the web interface.
-- **Text Extraction**: Extracts text from uploaded PDF files.
-- **AI Processing**: Uses GPT-4 to generate content or summaries based on the extracted text.
-- **File Management**: Uploaded files are stored temporarily and cleaned up after processing.
+### `npm start`
 
-## Installation
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-To set up the project locally, follow these steps:
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-1. **Clone the repository:**
+### `npm test`
 
-   ```bash
-   git clone <repository-url>
-   ```
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-2. **Navigate to the project directory:**
+### `npm run build`
 
-   ```bash
-   cd resume-generator
-   ```
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-3. **Install dependencies:**
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-   ```bash
-   npm install
-   ```
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-4. **Create a `.env` file in the `server` directory with the following content:**
+### `npm run eject`
 
-   ```env
-   OPENAI_API_KEY=your_openai_api_key
-   ```
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-5. **Start the server:**
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-   ```bash
-   cd server
-   node app.js
-   ```
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-   The server will run at `http://localhost:3000`.
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## API Endpoints
+## Learn More
 
-- **POST /upload**: Uploads a PDF file. Requires `pdf` as the file field name in the form data. Responds with generated text or an error message.
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-## Usage
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-1. Open Postman or your preferred API testing tool.
-2. Set the method to POST and the URL to `http://localhost:3000/upload`.
-3. Under the `Body` tab, select `form-data` and add a pdf key with the file type.
-4. Choose a PDF file to upload and send the request.
+### Code Splitting
 
-## Contributing
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-Feel free to submit issues or pull requests if you have suggestions or improvements.
+### Analyzing the Bundle Size
 
-## License
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-This project is licensed under the MIT License. Please look at the [LICENSE](LICENSE) file for details.
+### Making a Progressive Web App
 
-In this `README.md`, replace `<repository-url>` with your repository URL. This file provides a comprehensive guide to setting up and using the Resume Generator application.
-```
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-This `README.md` now includes all the necessary instructions and details for setting up and using the project, along with contributing and licensing information.
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
